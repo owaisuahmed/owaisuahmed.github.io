@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./bootstrap.min.css" rel="stylesheet">
-    <title>Owais's Portfolio</title>
+    <title>navbar</title>
   </head>
   <body>
 
-    <!-- Bootstrap navbar -->
-    
+    <!-- Bootstrap navbar. This code will be reused in each page by making an Async call to this file. 
+         The HTML below will be dynamically injected into the page. Changes below will be reflected in
+         all pages that reference this.
+    -->
     <nav class="navbar navbar-expand-lg bg-light navbar-fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Owais</a>
+        <a class="navbar-brand" href="index.html">Owais</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -40,14 +42,10 @@
               <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          
         </div>
       </div>
     </nav>
-    
     <!-- End -->
 
     <script src="./bootstrap.bundle.min.js"></script>

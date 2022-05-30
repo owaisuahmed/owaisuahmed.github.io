@@ -1,24 +1,108 @@
 body {
-  margin: 40px;
+  margin: 10px;
 }
 
-.sidebar {
+/* For home page */
+.sidebar1 {
   grid-area: sidebar;
+  padding-left: 5%;
 }
 
-.content {
+.content1 {
   grid-area: content;
 }
 
-.header {
+.header1 {
+  grid-area: header;
+  text-align: center;
+}
+
+.footer1 {
+  grid-area: footer;
+  text-align: center;
+}
+
+.wrapper1 {  
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 15% 50% 35%;
+  grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'footer  footer  footer';
+  justify-content: center;
+  background-color: #fff;
+  color: #444;
+}
+
+.box1 {
+  /* background-color: #7c7c88; */
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 150%;
+}
+
+/* For PacMen page */
+/* For home page */
+.sidebar2 {
+  grid-area: sidebar;
+  padding-left: 5%;
+}
+
+.content2 {
+  grid-area: content;
+}
+
+.header2 {
+  grid-area: header;
+  text-align: center;
+}
+
+.footer2 {
+  grid-area: footer;
+  text-align: center;
+}
+
+.wrapper2 {  
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 15% 50% 35%;
+  grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'footer  footer  footer';
+  justify-content: center;
+  background-color: #fff;
+  color: #444;
+}
+
+.box2 {
+  /* background-color: #7c7c88; */
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 150%;
+}
+
+/* For Eye page */
+.sidebar3 {
+  grid-area: sidebar;
+}
+
+.content3 {
+  grid-area: content;
+}
+
+.header3 {
   grid-area: header;
 }
 
-.footer {
+.footer3 {
   grid-area: footer;
 }
 
-.wrapper {
+.wrapper3 {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 244px 244px 244px;
@@ -30,7 +114,44 @@ body {
   color: #444;
 }
 
-.box {
+.box3 {
+  /* background-color: #7c7c88; */
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 150%;
+}
+
+/* For Bus Tracking page */
+.sidebar4 {
+  grid-area: sidebar;
+}
+
+.content4 {
+  grid-area: content;
+}
+
+.header4 {
+  grid-area: header;
+}
+
+.footer4 {
+  grid-area: footer;
+}
+
+.wrapper4 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 244px 244px 244px;
+  grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'footer  footer  footer';
+  background-color: #fff;
+  color: #444;
+}
+
+.box4 {
   /* background-color: #7c7c88; */
   color: rgb(0, 0, 0);
   border-radius: 5px;

@@ -1,160 +1,84 @@
+/* For images - resize as needed but never more than 100% */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For links */
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #939692;
+}
+
+a:visited {
+  color: #437A16;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #BAE498;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #CDFEAA;
+}
+
+a:active {
+  background: #265301;
+  color: #CDFEAA;
+}
+
 body {
-  margin: 10px;
+  margin: 5px;
 }
 
 /* For home page */
-.sidebar1 {
-  grid-area: sidebar;
-  padding-left: 5%;
+.left {
+  grid-area: left;  
 }
 
-.content1 {
-  grid-area: content;
+.center {
+  grid-area: center;
 }
 
-.header1 {
+.right {
+  grid-area: right;
+}
+
+.header {
   grid-area: header;
   text-align: center;
 }
 
-.footer1 {
+.footer {
   grid-area: footer;
   text-align: center;
 }
 
-.wrapper1 {  
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 15% 50% 35%;
-  grid-template-areas:
-    'header header header'
-    'sidebar content content'
-    'footer  footer  footer';
-  justify-content: center;
-  background-color: #fff;
-  color: #444;
+.box {
+  padding-left: 3%;
 }
 
-.box1 {
-  /* background-color: #7c7c88; */
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 2px;
-  font-size: 150%;
+.wrapper {  
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 15% 30% 20%;
+  grid-template-areas:
+    'header header header'
+    'left center right'
+    'footer  footer  footer';
+  justify-content: left;
+  background-color: #fff;
+  color: #444;
 }
 
 /* For PacMen page */
-/* For home page */
-.sidebar2 {
-  grid-area: sidebar;
-  padding-left: 5%;
-}
 
-.content2 {
-  grid-area: content;
-}
-
-.header2 {
-  grid-area: header;
-  text-align: center;
-}
-
-.footer2 {
-  grid-area: footer;
-  text-align: center;
-}
-
-.wrapper2 {  
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 15% 50% 35%;
-  grid-template-areas:
-    'header header header'
-    'sidebar content content'
-    'footer  footer  footer';
-  justify-content: center;
-  background-color: #fff;
-  color: #444;
-}
-
-.box2 {
-  /* background-color: #7c7c88; */
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 2px;
-  font-size: 150%;
-}
-
-/* For Eye page */
-.sidebar3 {
-  grid-area: sidebar;
-}
-
-.content3 {
-  grid-area: content;
-}
-
-.header3 {
-  grid-area: header;
-}
-
-.footer3 {
-  grid-area: footer;
-}
-
-.wrapper3 {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 244px 244px 244px;
-  grid-template-areas:
-    'header header header'
-    'sidebar content content'
-    'footer  footer  footer';
-  background-color: #fff;
-  color: #444;
-}
-
-.box3 {
-  /* background-color: #7c7c88; */
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 2px;
-  font-size: 150%;
-}
 
 /* For Bus Tracking page */
-.sidebar4 {
-  grid-area: sidebar;
-}
-
-.content4 {
-  grid-area: content;
-}
-
-.header4 {
-  grid-area: header;
-}
-
-.footer4 {
-  grid-area: footer;
-}
-
-.wrapper4 {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 244px 244px 244px;
-  grid-template-areas:
-    'header header header'
-    'sidebar content content'
-    'footer  footer  footer';
-  background-color: #fff;
-  color: #444;
-}
-
-.box4 {
-  /* background-color: #7c7c88; */
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 2px;
-  font-size: 150%;
-}
